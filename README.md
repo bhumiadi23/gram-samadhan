@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# 🏛️ Gram Samadhan (Digital Gram Panchayat)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Gram Samadhan Banner](https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=1200&auto=format&fit=crop)
 
-Currently, two official plugins are available:
+**Gram Samadhan** is a modern, comprehensive digital governance platform designed to bridge the gap between rural citizens and their Gram Panchayat. It empowers villagers to easily access information, submit grievances, and stay updated with the latest local schemes—all from their smartphones or computers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🛡️ Digital Grievance Portal**  
+  Citizens can quickly register complaints regarding water supply, electricity, road maintenance, and sanitation without visiting the Panchayat office.
+- **🔍 Live Complaint Tracking**  
+  Every grievance generates a unique Tracking ID, allowing citizens to monitor the resolution progress in real-time.
+- **📢 Official Notice Board**  
+  A centralized hub for the Sarpanch and Panchayat officials to broadcast critical alerts, upcoming Gram Sabha meetings, and government scheme registrations (like PMAY, KCC).
+- **📱 Responsive & Accessible Design**  
+  Built with a mobile-first approach ensuring the platform is usable on low-end devices and varied screen sizes.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend Framework**: [React 18](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) for rapid, responsive utility-class styling.
+- **Animations**: [Framer Motion](https://www.framer.com/motion/) for smooth page transitions and interactive micro-animations.
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Routing**: React Router DOM v6
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+To run this project locally on your machine, follow these steps:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/bhumiadi23/gram-samadhan.git
+   cd gram-samadhan
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **View the app:**
+   Open your browser and navigate to the URL provided in your terminal (usually `http://localhost:5173`).
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to check the [issues page](https://github.com/bhumiadi23/gram-samadhan/issues) if you want to contribute.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+*Built with ❤️ for rural empowerment.*
